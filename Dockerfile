@@ -37,3 +37,5 @@ RUN apt-get clean &&\
     rm -rf /var/lib/apt/lists/*
 
 ENV CROSS_COMPILE=arm-linux-gnueabihf-
+ENV CXX=${CROSS_COMPILE}g++
+ENV CC=${CROSS_COMPILE}gcc
