@@ -4,6 +4,7 @@ RUN apt update &&\
     apt install -y --no-install-recommends \
     wget \
     libssl-dev \
+    zlib1g-dev \
     bc \
     kmod \
     u-boot-tools \
@@ -24,6 +25,7 @@ RUN apt update &&\
     git \
     gcc-7-arm-linux-gnueabihf \
     g++-7-arm-linux-gnueabihf \
+    libgnutls28-dev \
     python3 python3-dev python3-distutils python3-setuptools swig
 RUN update-alternatives --install /usr/bin/arm-linux-gnueabihf-cpp arm-linux-gnueabihf-cpp /usr/bin/arm-linux-gnueabihf-cpp-7 70 &&\
     update-alternatives --install /usr/bin/arm-linux-gnueabihf-gcc arm-linux-gnueabihf-gcc /usr/bin/arm-linux-gnueabihf-gcc-7 70 &&\
