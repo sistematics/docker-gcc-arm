@@ -26,6 +26,7 @@ RUN apt update &&\
     gcc-14-arm-linux-gnueabihf \
     g++-14-arm-linux-gnueabihf \
     libgnutls28-dev \
+    squashfs-tools \
     python3 python3-dev python3-setuptools python3-setuptools swig
 RUN update-alternatives --install /usr/bin/arm-linux-gnueabihf-cpp arm-linux-gnueabihf-cpp /usr/bin/arm-linux-gnueabihf-cpp-14 70 &&\
     update-alternatives --install /usr/bin/arm-linux-gnueabihf-gcc arm-linux-gnueabihf-gcc /usr/bin/arm-linux-gnueabihf-gcc-14 70 &&\
